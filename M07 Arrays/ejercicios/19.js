@@ -5,6 +5,18 @@ function continueStatement(num) {
   // se continúa con la siguiente iteración.
   // PISTA: Utiliza el statement 'continue'.
   // Tu código:
+  var rp  = num  ; 
+  var vector = [];
+  for (let i =0 ;  i<10;i++){
+    if(i == 4){
+      continue;
+    }
+    else{
+    rp+=2;
+    vector.push(rp);
+    }
+  }
+  return vector;
 }
 
 module.exports = continueStatement;
